@@ -41,7 +41,7 @@ app.post("/generate", async (req, res) => {
       await req.body;
 
     // Prompt for the AI model
-    const advice = `I'm in the process of planning a trip, and I need your assistance. The journey is from ${ylocation} to ${ydestination}, and I'll be staying for ${duration} days. My budget for this trip is ${ybudget}, and I have specific expectations related to ${expectations}.`;
+    const advice = `I'm in the process of planning a trip. I am from ${ylocation} and I need to go to ${ydestination}, and I'll be staying there for ${duration} days. My budget for this trip is ${ybudget}, and I have specific expectations related to ${expectations}.`;
 
     // Initiate the AI model
     const genAI = new GoogleGenerativeAI(apiKEY);
